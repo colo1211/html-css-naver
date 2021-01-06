@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+     <meta charset="utf-8" /> <!-- Html 문서에 대한 정보-->
+    <title>네이버</title>
+     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico?1" />
+     <link rel="stylesheet" href = "./naver.css"/> <!-- Css 파일 불러오기-->
+ </head>
+ <body>
+    <header>
+        <div id = 'header-center'>
+            <!--속성 명: 속성 값; 속성 명2: 속성 값2 이 때, ;로 구분-->
+                <!--인 라인 스타일: HTML 파일 내에 CSS 역할을 하게 끔 한다. 권장x-->
+            <div> <!--style="display: inline-block"을 통해서 마진 삭제 후 가로정렬을 유도-->
+                <span style="display: inline-block">네이버를 시작 페이지로</span>
+                <span style="display: inline-block">쥬니어네이버</span>
+                <span style="display: inline-block">해피빈</span>
+            </div>
+
+            <div id="header-search"> <!--css에서 header-search의 아래(자식관계)를 만져주고 싶다면 div#header-search>h1 -->
+                <a href="http://www.naver.com">
+                     <h1>
+                         <span>네이버</span>
+                     </h1>
+                </a>
+                <h2 class="blind">검색창</h2>
+                <fieldset>
+                    <legend class="blind">검색</legend>
+                    <input/>
+                    <button class="blind">검색</button>
+                </fieldset>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul> <!-- unordered list, 여기서 부터 리스트야!,나열된 것 들이야-->
+            <li>메일</li> <!-- list item-->
+            <li>카페</li> <!-- list item-->
+            <li>지식인</li> <!-- list item-->
+            <li>쇼핑</li> <!-- list item-->
+            <li>Pay</li> <!-- list item-->
+            <li>TV</li> <!-- list item-->
+        </ul>
+    </nav>
+
+    <main>
+        <h3>연합뉴스</h3>
+        <ol>
+            <li>속보) 김경원 프론트엔드로 갈아타..</li>
+            <li>속보) 나 지금 배고파..</li>
+        </ol>
+        <h3>언론사 목록</h3>
+        <ul> <!-- alt 태그는 이미지에 대한 설명-->
+            <li><img src="./국민일보.png" alt="국민일보"> </li>
+            <li><img src="./동아일보.png" alt="동아일보"> </li>
+            <li><img src="./스포탈코리아.png" alt="스포탈코리아"> </li>
+            <li><img src="./헤럴드경제.png" alt="헤럴드경제"> </li>
+        </ul>
+        <i> 네이버 회원 탈퇴 </i>
+        <h3>법률</h3>
+        <h3>쇼핑</h3>
+    </main>
+
+    <footer>
+        <div> 공지사항 </div>
+        <div> Creators </div>
+        <div> 회사소개 </div>
+    </footer>
+ </body>
+</html>
